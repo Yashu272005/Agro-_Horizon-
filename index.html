@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroHorizon Maharashtra – Smart Farming Platform</title>
+    <meta name="description" content="AI-powered smart agriculture platform for all 36 districts of Maharashtra" />
+    <meta name="author" content="AgroHorizon" />
+
+    <meta property="og:title" content="AgroHorizon Maharashtra" />
+    <meta property="og:description" content="Smart farming platform with AI, IoT, and market intelligence" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="preview.png" />
+   
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx">fetch("https://localhost:8079/api/messages")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error fetching messages:", error));</script>
+   
+  </body>
+</html>
